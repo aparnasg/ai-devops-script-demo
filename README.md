@@ -59,6 +59,9 @@ Target VM: Ubuntu
 CPU Utilization: 95%
 Memory Utilization: 5%
 Disk Utilization: 1%
+<img width="975" height="284" alt="image" src="https://github.com/user-attachments/assets/02b85a03-00c2-4528-b350-b3e8ee2bf207" />
+
+
 ```
 ## Things I noticed
 - In my run, the VM was reported **Unhealthy** even though memory (5%) and disk (1%)
