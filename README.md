@@ -55,11 +55,11 @@ The script marks the VM **healthy when all metrics are at or above 60%**.
 ## Output
 
 ```
-VM Health Status: Healthy
+VM Health Status: unHealthy
 Target VM: Ubuntu
-CPU Utilization: 72%
-Memory Utilization: 65%
-Disk Utilization: 61%
+CPU Utilization: 95%
+Memory Utilization: 5%
+Disk Utilization: 1%
 ```
 
 ## Things I noticed
