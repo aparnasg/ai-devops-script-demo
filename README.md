@@ -33,6 +33,8 @@ Each value is compared against a **60% threshold**. The script prints the status
 
 ## How to run
 
+## How to Run
+
 ```bash
 chmod +x vm_health_check.sh
 ./vm_health_check.sh
@@ -44,20 +46,24 @@ Or run it directly with Bash:
 bash vm_health_check.sh
 ```
 
+For a plain-English explanation of the result:
+
+```bash
+bash vm_health_check.sh explain
 ```
 
 ## Output
 
 ```
-VM Health Status: unHealthy
+VM Health Status: Unhealthy
 Target VM: Ubuntu
 CPU Utilization: 95%
 Memory Utilization: 5%
 Disk Utilization: 1%
 ```
-
 ## Things I noticed
-
+- In my run, the VM was reported **Unhealthy** even though memory (5%) and disk (1%)
+  were almost empty. This confirms the logic is backwards: low usage should be healthy.
 - The script marks the VM **healthy when all metrics are at or above 60%**.
   This follows the requirement given in the prompt. In real monitoring, high
   utilization usually signals a problem, so production checks normally flag a
