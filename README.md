@@ -70,8 +70,10 @@ Disk Utilization: 1%
   This follows the requirement given in the prompt. In real monitoring, high
   utilization usually signals a problem, so production checks normally flag a
   VM as unhealthy when usage goes **above** a threshold.
+
 - Possible improvements:
-  - Flip the logic so high usage triggers the warning
-  - Make the threshold configurable through an argument
-  - Check additional disks or mount points
-  - Send an alert (for example, SNS or email) when the status is unhealthy
+
+## Things I noticed
+• Flip the rule: the VM is Unhealthy when CPU, memory OR disk goes ABOVE 80%
+• With that rule, my run would be flagged only for the 95% CPU, which is the real concern
+• Next: implement it, make the threshold configurable, check more disks, and add AWS SNS alerts
