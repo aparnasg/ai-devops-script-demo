@@ -31,6 +31,7 @@ Each value is compared against a **60% threshold**. The script prints the status
 5. Pasted the generated code into the file.
 6. Opened a terminal and ran the script.
 
+
 ## How to Run
 
 ```bash
