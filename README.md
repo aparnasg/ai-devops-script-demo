@@ -44,12 +44,6 @@ Or run it directly with Bash:
 bash vm_health_check.sh
 ```
 
-For a plain-English explanation of the result:
-
-```bash
-bash vm_health_check.sh (explaination)
-
-The script marks the VM **healthy when all metrics are at or above 60%**.
 ```
 
 ## Output
